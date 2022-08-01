@@ -1,3 +1,5 @@
+using System.Text.RegularExpressions;
+
 namespace StockCalc
 {
     public partial class IntradayCalc : Form
@@ -23,14 +25,19 @@ namespace StockCalc
             {
                 if(!string.IsNullOrEmpty(textBox1.Text))
                 {
-                    double ltp = Convert.ToDouble(textBox1.Text);
-                    GenerateResult(ltp);
+                    textBox1.Text = Regex.Replace(textBox1.Text, "[^0-9.]", "");
+                    if(!string.IsNullOrEmpty(textBox1.Text))
+                    {
+                        double ltp = Convert.ToDouble(Regex.Replace(textBox1.Text, "[^0-9.]", ""));
+                        GenerateResult(ltp);
+                        textBox1.SelectionStart = textBox1.Text.Length;
+                        textBox1.SelectionLength = 0;
+                    }
                 }
                 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-
                 throw;
             }
         }
