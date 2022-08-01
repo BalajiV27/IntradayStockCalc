@@ -69,7 +69,7 @@ namespace StockCalc
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+         //   e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
         private double CaculatePercent(double num, int percent)
         {
