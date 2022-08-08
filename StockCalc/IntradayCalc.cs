@@ -88,13 +88,17 @@ namespace StockCalc
             label5.Text =CaculatePercent(ltp, 1).ToString();
             label8.Text = CaculatePercent(ltp, 2).ToString();
             label9.Text = CaculatePercent(ltp, 3).ToString();
-            label10.Text = CaculatePercent(ltp, 4).ToString();
-            label11.Text = CaculatePercent(ltp, 5).ToString();
+            label10.Text = CaculatePercent(ltp, 5).ToString();
+            label11.Text = CaculatePercent(ltp, 10).ToString();
+            label12.Text = CaculatePercent(ltp, 15).ToString();
+            label14.Text = CaculatePercent(ltp, 20).ToString();
             labelNeg1.Text = CaculatePercent(ltp, -1).ToString();
             labelNeg2.Text = CaculatePercent(ltp, -2).ToString();
             labelNeg3.Text = CaculatePercent(ltp, -3).ToString();
             labelNeg4.Text = CaculatePercent(ltp, -4).ToString();
             labelNeg5.Text = CaculatePercent(ltp, -5).ToString();
+            labelNeg6.Text = CaculatePercent(ltp, -7).ToString();
+            labelNeg7.Text = CaculatePercent(ltp, -10).ToString();
         }
     }
 }
