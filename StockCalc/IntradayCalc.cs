@@ -85,20 +85,33 @@ namespace StockCalc
 
         private void GenerateResult(double ltp)
         {
-            label5.Text =CaculatePercent(ltp, 1).ToString();
-            label8.Text = CaculatePercent(ltp, 2).ToString();
-            label9.Text = CaculatePercent(ltp, 3).ToString();
-            label10.Text = CaculatePercent(ltp, 5).ToString();
-            label11.Text = CaculatePercent(ltp, 10).ToString();
-            label12.Text = CaculatePercent(ltp, 15).ToString();
-            label14.Text = CaculatePercent(ltp, 20).ToString();
-            labelNeg1.Text = CaculatePercent(ltp, -1).ToString();
-            labelNeg2.Text = CaculatePercent(ltp, -2).ToString();
-            labelNeg3.Text = CaculatePercent(ltp, -3).ToString();
-            labelNeg4.Text = CaculatePercent(ltp, -4).ToString();
-            labelNeg5.Text = CaculatePercent(ltp, -5).ToString();
-            labelNeg6.Text = CaculatePercent(ltp, -7).ToString();
-            labelNeg7.Text = CaculatePercent(ltp, -10).ToString();
+            b1_valuelabel.Text =CaculatePercent(ltp, 1).ToString();
+            b2_valuelabel.Text = CaculatePercent(ltp, 2).ToString();
+            b3_valuelabel.Text = CaculatePercent(ltp, 3).ToString();
+            b4_valuelabel.Text = CaculatePercent(ltp, 4).ToString();
+            b5_valuelabel.Text = CaculatePercent(ltp, 5).ToString();
+            b6_valuelabel.Text = CaculatePercent(ltp, 6).ToString();
+            b7_valuelabel.Text = CaculatePercent(ltp, 7).ToString();
+            b8_valuelabel.Text = CaculatePercent(ltp, 8).ToString();
+            b9_valuelabel.Text = CaculatePercent(ltp, 9).ToString();
+            b10_valuelabel.Text = CaculatePercent(ltp, 10).ToString();
+            b12_valuelabel.Text = CaculatePercent(ltp, 12).ToString();
+            b15_valuelabel.Text = CaculatePercent(ltp, 15).ToString();
+            b20_valuelabel.Text = CaculatePercent(ltp, 20).ToString();
+
+            s1_labelvalue.Text = CaculatePercent(ltp, -1).ToString();
+            s2_labelvalue.Text = CaculatePercent(ltp, -2).ToString();
+            s3_labelvalue.Text = CaculatePercent(ltp, -3).ToString();
+            s4_labelvalue.Text = CaculatePercent(ltp, -4).ToString();
+            s5_labelvalue.Text = CaculatePercent(ltp, -5).ToString();
+            s6_labelvalue.Text = CaculatePercent(ltp, -6).ToString();
+            s7_labelvalue.Text = CaculatePercent(ltp, -7).ToString();
+            s8_labelvalue.Text = CaculatePercent(ltp, -8).ToString();
+            s9_labelvalue.Text = CaculatePercent(ltp, -9).ToString();
+            s10_labelvalue.Text = CaculatePercent(ltp, -10).ToString();
+            s12_labelvalue.Text = CaculatePercent(ltp, -12).ToString();
+            s15_labelvalue.Text = CaculatePercent(ltp, -15).ToString();
+            s20_labelvalue.Text = CaculatePercent(ltp, -20).ToString();
         }
     }
 }
